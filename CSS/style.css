@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+   font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    text-align: center;
+    background-image: url("backpi.jpg");
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #0078ff;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+
+.player1{
+    position: relative;
+}
+.player1::after{
+    position: absolute;
+    content: "";
+    background-image: url("bola.png");    
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    right: 25px;
+    top: 25px;    
+    
+}
+.player2{
+    position: relative;
+}
+.player2::after{
+    position: absolute;
+    content: "";
+    background-image: url("pik.png");    
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    right: 25px;
+    top: 25px;    
+    
+}
+
+.winner {
+    margin: auto;
+    width: 80%;
+    display: none;
+    color: darkblue;
+    background: greenyellow;
+    width: 260px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 10px 20px 13px 20px;
+    font-size: 1rem;
+}
+#restartButton {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(3, 81, 250);
+    border: none;
+    border-radius: 00.25rem;
+    font-size: 1rem;
+}
+#restartButton:hover {background-color: #3e8e41}
+
+#restartButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+  .typedtext {
+    
+    margin-top: 20px;
+    animation: blinkTextCursor 800ms steps(44) infinite normal;
+    height: 40px;
+    margin-bottom: 55px;
+    color: #000;
+    display: block;
+  }
+  @media (max-width: 520px){
+    body{
+        background-image: url("respoback.png");
+    }
+
+  }
+  
